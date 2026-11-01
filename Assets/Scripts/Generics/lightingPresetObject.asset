@@ -19,15 +19,15 @@ MonoBehaviour:
     key2: {r: 0.5176471, g: 0.70980394, b: 0.78039217, a: 0}
     key3: {r: 1, g: 0.79607844, b: 0.46666667, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0.22352941, g: 0.23921569, b: 0.24705882, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 9830
+    ctime0: 6554
     ctime1: 13107
     ctime2: 31804
     ctime3: 45875
-    ctime4: 55705
-    ctime5: 65535
+    ctime4: 58982
+    ctime5: 56861
     ctime6: 0
     ctime7: 0
     atime0: 0
@@ -46,17 +46,17 @@ MonoBehaviour:
     serializedVersion: 2
     key0: {r: 0.01886791, g: 0, b: 0, a: 1}
     key1: {r: 1, g: 0.79607844, b: 0.46666667, a: 1}
-    key2: {r: 0, g: 0, b: 0, a: 1}
-    key3: {r: 0.22352941, g: 0.23921569, b: 0.24705882, a: 0}
+    key2: {r: 1, g: 0.79607844, b: 0.46666667, a: 1}
+    key3: {r: 1, g: 0.79607844, b: 0.46666667, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 9830
-    ctime1: 31804
-    ctime2: 55705
-    ctime3: 55705
-    ctime4: 0
+    ctime0: 6554
+    ctime1: 18119
+    ctime2: 32768
+    ctime3: 45875
+    ctime4: 59367
     ctime5: 0
     ctime6: 0
     ctime7: 0
@@ -70,7 +70,7 @@ MonoBehaviour:
     atime7: 0
     m_Mode: 0
     m_ColorSpace: 0
-    m_NumColorKeys: 3
+    m_NumColorKeys: 5
     m_NumAlphaKeys: 2
   fogColour:
     serializedVersion: 2

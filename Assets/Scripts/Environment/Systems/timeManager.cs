@@ -9,28 +9,28 @@ public class timeManager : MonoBehaviour
 {
 
     [Header("Time State")]
-    [SerializeField, Range(1, 31)] public int currentGameDay;
-    [SerializeField, Range(0, 23)] public int currentGameHour;
-    [SerializeField, Range(0, 59)] public int currentGameMinute;
-    [SerializeField, Range(1, 59)] public int currentGameSecond;
-    [SerializeField, Range(1, 12)] public int currentGameMonth;
-    [SerializeField, Range(1, 7)] public int currentGameDayOfWeek;
-    public int currentGameYear;
+    [SerializeField, Range(1, 31)] private int currentGameDay;
+    [SerializeField, Range(0, 23)] private int currentGameHour;
+    [SerializeField, Range(0, 59)] private int currentGameMinute;
+    [SerializeField, Range(1, 59)] private int currentGameSecond;
+    [SerializeField, Range(1, 12)] private int currentGameMonth;
+    [SerializeField, Range(1, 7)] private int currentGameDayOfWeek;
+    private int currentGameYear;
 
     [Header("Previous Time State")]
-    [SerializeField, Range(1, 31)] public int previousGameDay;
-    [SerializeField, Range(0, 23)] public int previousGameHour;
-    [SerializeField, Range(0, 59)] public int previousGameMinute;
-    [SerializeField, Range(1, 59)] public int previousGameSecond;
-    [SerializeField, Range(1, 12)] public int previousGameMonth;
-    [SerializeField, Range(1, 7)] public int previousGameDayOfWeek;
+    [SerializeField, Range(1, 31)] private int previousGameDay;
+    [SerializeField, Range(0, 23)] private int previousGameHour;
+    [SerializeField, Range(0, 59)] private int previousGameMinute;
+    [SerializeField, Range(1, 59)] private int previousGameSecond;
+    [SerializeField, Range(1, 12)] private int previousGameMonth;
+    [SerializeField, Range(1, 7)] private int previousGameDayOfWeek;
 
-    public int previousGameYear;
+    private int previousGameYear;
 
     [Header("Last Save")]
-    public string lastSave;
+    private string lastSave;
     [Header("First Save")]
-    public string firstSave;
+    private string firstSave;
 
 
     [Header("Time Settings")]

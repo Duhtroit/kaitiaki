@@ -1,0 +1,162 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7966225930754564015
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: ee589735e9d9640aba4d6e7378fcc34e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ee589735e9d9640aba4d6e7378fcc34e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ee589735e9d9640aba4d6e7378fcc34e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ee589735e9d9640aba4d6e7378fcc34e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ee589735e9d9640aba4d6e7378fcc34e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ee589735e9d9640aba4d6e7378fcc34e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ee589735e9d9640aba4d6e7378fcc34e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ee589735e9d9640aba4d6e7378fcc34e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ee589735e9d9640aba4d6e7378fcc34e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ee589735e9d9640aba4d6e7378fcc34e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ee589735e9d9640aba4d6e7378fcc34e, type: 3}
+      propertyPath: m_Name
+      value: Kereru
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: ee589735e9d9640aba4d6e7378fcc34e, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 8502bece5485b44c09efb63f3f9142e3, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ee589735e9d9640aba4d6e7378fcc34e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4625010533751411573}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ee589735e9d9640aba4d6e7378fcc34e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1509081001913404139}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ee589735e9d9640aba4d6e7378fcc34e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4611980765174827792}
+  m_SourcePrefab: {fileID: 100100000, guid: ee589735e9d9640aba4d6e7378fcc34e, type: 3}
+--- !u!95 &4604699648679027262 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: ee589735e9d9640aba4d6e7378fcc34e, type: 3}
+  m_PrefabInstance: {fileID: 7966225930754564015}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7083266760806015742 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ee589735e9d9640aba4d6e7378fcc34e, type: 3}
+  m_PrefabInstance: {fileID: 7966225930754564015}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4625010533751411573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7083266760806015742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0038c16c34866b4f9e25c9c0dc0f7e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Behavior::Unity.Behavior.BehaviorGraphAgent
+  m_Graph: {fileID: -2115580126931732724, guid: eee5958d2d9a24946a5f71027fa85a46, type: 2}
+  m_BlackboardVariableOverridesList:
+  - rid: 4958476935758086254
+  m_OriginalGraph: {fileID: 0}
+  m_IsInitialised: 0
+  m_IsStarted: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 4958476935758086254
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 1
+          m_Value1: 0
+        Name: Self
+        m_Value: {fileID: 7083266760806015742}
+--- !u!114 &1509081001913404139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7083266760806015742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe03c3be31d2845898c4e2eed13019b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::animal
+  data: {fileID: 11400000, guid: eac2176161bcb4810a196470d7a24eca, type: 2}
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 32768
+  groundRayHeight: 50
+  animator: {fileID: 4604699648679027262}
+  onPlantEat: {fileID: 11400000, guid: 219d28c98cf5540cb9fd1f1796b54010, type: 2}
+  plantQueryRequested: {fileID: 11400000, guid: 4accdcf268046421bbf9e9489c72cc0d, type: 2}
+  hunger: 0
+  timeAlive: 0
+  hasEaten: 0
+--- !u!114 &4611980765174827792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7083266760806015742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 104c331efb5ff4d95bd67bcf2bf44248, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::plantEventListener
+  eventToListen: {fileID: 11400000, guid: d42db379174774db2bc8e5e6e6767534, type: 2}
+  onEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1509081001913404139}
+        m_TargetAssemblyTypeName: animal, Assembly-CSharp
+        m_MethodName: onPlantRemoved
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

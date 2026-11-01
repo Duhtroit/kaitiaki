@@ -1,9 +1,8 @@
-using System;
-using System.IO.Compression;
 using UnityEngine;
 
-public abstract class abstractPlant : MonoBehaviour, IPlaceable
+public abstract class abstractPlant : MonoBehaviour
 {
+
     [Header("Plant State")]
     [SerializeField]
     int aliveHours = 0;
@@ -16,6 +15,10 @@ public abstract class abstractPlant : MonoBehaviour, IPlaceable
     [SerializeField]
     int idealConditionsBoost = 2;
 
+    [Header("Seed")]
+    [SerializeField]
+    plantSeed seed;
+
     // Bounce animation state
     [SerializeField]
     float bounce = 5.5f; //how much it overshoots
@@ -24,7 +27,8 @@ public abstract class abstractPlant : MonoBehaviour, IPlaceable
     Vector3 scaleVelocity = Vector3.zero;
 
 
-    public abstract float waterUseRate { get; } //never seen this before right now, but this forces an implementation to create this
+    //properties
+    public abstract float waterUseRate { get; }
     public abstract float growthRate { get; }
     public abstract float damageRate { get; }
     public abstract float idealMoisture { get; }
@@ -34,14 +38,14 @@ public abstract class abstractPlant : MonoBehaviour, IPlaceable
 
     void Start()
     {
+
         plantGrowthParticles = GetComponentInChildren<ParticleSystem>();
-        transform.localScale = Vector3.one * growthPercent;
+        transform.localScale = Vector3.one * (growthPercent / 100f);
     }
 
     void Update()
     {
-        float target = growthPercent/100;
-
+        float target = growthPercent / 100;
         float overshoot = target * bounce;
 
         if (transform.localScale.x < target)
@@ -70,10 +74,20 @@ public abstract class abstractPlant : MonoBehaviour, IPlaceable
         {
             growthPercent = Mathf.Clamp(growthPercent + (growthRate * amount), 0, 100);
 
-            plantGrowthParticles.Play();
+            if (plantGrowthParticles != null)
+            {
+                plantGrowthParticles.Play();
+            }
         }
 
     }
+
+    //for animals
+    public void eat(float amount) 
+    {
+        health -= amount;
+    }
+
 
     public void damage(float amount)
     {
@@ -100,7 +114,7 @@ public abstract class abstractPlant : MonoBehaviour, IPlaceable
 
     public bool isAlive()
     {
-        return health > 0 ? true : false;
+        return health > 0;
     }
 
     public float usedWater(int timeAmount)
@@ -108,6 +122,21 @@ public abstract class abstractPlant : MonoBehaviour, IPlaceable
         Debug.Log($"Plant is using water");
 
         return waterUseRate * timeAmount;
+    }
+
+    public plantSeed getSeed()
+    {
+        return seed;
+    }
+
+    public void setSeed(plantSeed newSeed)
+    {
+        seed = newSeed;
+    }
+
+    public float getGrowthPercent()
+    {
+        return growthPercent;
     }
 
 }

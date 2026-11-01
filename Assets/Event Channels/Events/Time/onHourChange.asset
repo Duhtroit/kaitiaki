@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 171f41f887a67429f8125f5e12e724d2, type: 3}
   m_Name: onHourChange
   m_EditorClassIdentifier: Assembly-CSharp::intEvent
-  testingValue: 0
+  testingValue: 1

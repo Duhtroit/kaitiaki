@@ -6,7 +6,7 @@ public class cameraController : MonoBehaviour
 
     [Header("Camera Settings")]
     [SerializeField]
-    private GameObject subject;
+    private Vector3 subject;
     [SerializeField]
     private Camera camera;
     [SerializeField]
@@ -19,22 +19,34 @@ public class cameraController : MonoBehaviour
     [Header("Camera Zoom Settings")]
     [SerializeField]
     private Vector3 positionOffsetZoomed = new Vector3(0, 4, -4);
-    [SerializeField]
-    private Vector3 rotationOffsetZoomed = new Vector3(30, 0, 0);
+
 
     private Vector3 currentVelocity = Vector3.zero;
     private Vector3 targetPosition;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
 
+    Vector3 posOffset;
+
+    private bool zoomed = false;
+
+    public void onPlayerPositionChange(Vector3 pos)
+    {
+        subject = pos;
     }
 
     // Update is called once per frame
     void LateUpdate()
     {
-        targetPosition = subject.transform.position + positionOffset;
+        
+        posOffset = zoomed ? positionOffsetZoomed: positionOffset;
+
+        targetPosition = subject + posOffset;
         camera.transform.position = Vector3.SmoothDamp(camera.transform.position, targetPosition, ref currentVelocity, smoothing);
 
     }
+
+    public void setZoomed(bool value)
+    {
+        zoomed = value;
+    }
+
 }

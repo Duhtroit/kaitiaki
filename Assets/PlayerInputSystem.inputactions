@@ -37,7 +37,7 @@
                     "name": "Interact",
                     "type": "Button",
                     "id": "852140f2-7766-474d-8707-702459ba45f3",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "Hold",
                     "initialStateCheck": false
@@ -88,16 +88,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Details",
-                    "type": "Button",
-                    "id": "32eeabfc-9202-4456-af6e-997205f10eed",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "PlantMode",
+                    "name": "ShowMarker",
                     "type": "Button",
                     "id": "6dec9340-9748-4f33-82e5-b3e337101026",
                     "expectedControlType": "",
@@ -362,6 +353,17 @@
                 },
                 {
                     "name": "",
+                    "id": "dc79367f-d7f0-4c4a-adab-1fb25c40310a",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Next",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "f2e9ba44-c423-42a7-ad56-f20975884794",
                     "path": "<Keyboard>/leftShift",
                     "interactions": "",
@@ -494,23 +496,12 @@
                 },
                 {
                     "name": "",
-                    "id": "54765137-563f-4b4f-bde5-194be73a10dd",
-                    "path": "<Keyboard>/tab",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Keyboard&Mouse",
-                    "action": "Details",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "3c789bef-5c19-4921-b5e9-eb9656b5e360",
                     "path": "<Keyboard>/q",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "PlantMode",
+                    "action": "ShowMarker",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
